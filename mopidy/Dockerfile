@@ -39,8 +39,7 @@ RUN set -ex \
         curl \
         gcc \
 	build-essential \
- && apt-get clean \
- && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
+ && apt-get clean 
 
 
 COPY mopidy.conf /var/lib/mopidy/.config/mopidy/mopidy.conf
