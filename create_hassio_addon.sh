@@ -160,8 +160,7 @@ docker run --rm \
     -e DOCKER_TAG="$DOCKER_TAG" \
     --name $BUILD_CONTAINER_NAME \
     --privileged \
-    homeassistant/docker-build-env \
-    /run-docker.sh
+    homeassistant/docker-build-env 
 
 echo "[INFO] cleanup WORKSPACE"
 cd "$BUILD_DIR"
